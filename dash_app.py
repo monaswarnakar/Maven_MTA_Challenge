@@ -125,6 +125,7 @@ fig.update_layout(
 )
 # Initialize Dash app with suppress_callback_exceptions=True
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 
 # Define transportation modes and years for the dropdown
 transport_modes = ['Subways', 'Buses', 'LIRR', 'Metro-North', 'Access-A-Ride', 'Bridges and Tunnels', 'Staten Island Railway']
